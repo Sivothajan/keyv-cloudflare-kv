@@ -1,7 +1,13 @@
 {
   "name": "keyv-cloudflare-kv",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-alpha.1",
   "description": "Cloudflare KV storage adapter for Keyv",
+  "homepage": "https://github.com/sivothajan/keyv-cloudflare-kv#keyv-cloudflare-kv",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivothajan/keyv-cloudflare-kv.git"
+  },
+  "license": "MIT",
   "author": {
     "name": "Sivothayan",
     "email": "hi@sivothayan.com",
@@ -17,9 +23,25 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "type": "module",
+  "keywords": [
+    "keyv",
+    "keyv-adapter",
+    "cloudflare",
+    "cloudflare-kv",
+    "cloudflare-workers",
+    "workers-kv",
+    "edge",
+    "edge-storage",
+    "kv-storage",
+    "key-value-store",
+    "cache",
+    "session-store",
+    "storage-adapter"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsc -w",
@@ -54,5 +76,8 @@
     "bracketSpacing": true,
     "arrowParens": "always",
     "endOfLine": "auto"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

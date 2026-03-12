@@ -15,31 +15,12 @@ This allows the same backend code to run anywhere.
 
 ## Installation
 
-This package is published on GitHub Packages.
-
-First configure your `.npmrc`.
-
-### .npmrc
-
-```bash
-@Sivothajan:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
-```
-
-Replace:
-
-- `YOUR_GITHUB_TOKEN`
-
----
-
-### Install
-
 ```bash
 # npm
-npm install @Sivothajan/keyv-cloudflare-kv
+npm install keyv-cloudflare-kv
 
 # bun
-bun add @Sivothajan/keyv-cloudflare-kv
+bun add keyv-cloudflare-kv
 ```
 
 ---
@@ -51,7 +32,7 @@ bun add @Sivothajan/keyv-cloudflare-kv
 ```javascript
 import Keyv from 'keyv';
 import Cloudflare from 'cloudflare';
-import KeyvCloudflare from '@Sivothajan/keyv-cloudflare-kv';
+import KeyvCloudflare from 'keyv-cloudflare-kv';
 
 const client = new Cloudflare({
   apiToken: process.env.CF_API_TOKEN,
@@ -79,7 +60,7 @@ console.log(value);
 
 ```javascript
 import Keyv from 'keyv';
-import KeyvCloudflare from '@Sivothajan/keyv-cloudflare-kv';
+import KeyvCloudflare from 'keyv-cloudflare-kv';
 
 export default {
   async fetch(request, env) {
@@ -161,3 +142,9 @@ Build
 ```bash
 bun run build
 ```
+
+---
+
+## License
+
+[MIT](./LICENSE)
