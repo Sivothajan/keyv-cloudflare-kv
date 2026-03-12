@@ -1,6 +1,6 @@
 import Keyv from 'keyv';
 
-import KeyvCloudflare from '../src';
+import KeyvCloudflare from '../src/index.js';
 
 import type { KVNamespace } from '@cloudflare/workers-types';
 

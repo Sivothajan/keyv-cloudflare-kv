@@ -1,6 +1,6 @@
-import { ApiKVClient } from './api-client';
-import { parse, prefix } from './utils';
-import { WorkersKVClient } from './workers-client';
+import { ApiKVClient } from './api-client.js';
+import { parse, prefix } from './utils.js';
+import { WorkersKVClient } from './workers-client.js';
 
 import type { KeyvCloudflareOptions } from './types';
 
