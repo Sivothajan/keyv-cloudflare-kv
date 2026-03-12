@@ -1,5 +1,5 @@
 {
-  "name": "@sivothajan/keyv-cloudflare-kv",
+  "name": "keyv-cloudflare-kv",
   "version": "0.1.0-alpha",
   "description": "Cloudflare KV storage adapter for Keyv",
   "author": {
